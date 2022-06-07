@@ -35,3 +35,4 @@ yarn-error.log*
 *.tsbuildinfo
 firebase-debug.log
 .firebase/hosting.b3V0.cache
+.env
