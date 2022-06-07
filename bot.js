@@ -1,8 +1,9 @@
 const TelegramBot = require('node-telegram-bot-api');
 const simpleGit = require('simple-git');
+require('dotenv').config()
 const git = simpleGit().clean(simpleGit.CleanOptions.FORCE);
 
-const token = '5327317524:AAGyhyD1akhsyCqu7CRtQNbeHbOBDHnxF1Y';
+const token = process.env.TOKEN;
 const bot = new TelegramBot(token, {polling: true});
 bot.on('channel_post', (msg) => {
   if ( msg.text.includes("KINTO") ) {
