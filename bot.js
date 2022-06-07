@@ -9,9 +9,9 @@ bot.on('channel_post', (msg) => {
     console.log(msg.text);
     const fs = require('fs');
 
-    fs.appendFile('message.md', `\n${msg.text}\n\n---\n`, function (err) {
+    fs.appendFile('README.md', `\n${msg.text}\n\n---\n`, function (err) {
       if (err) throw err;
-      git.add(['message.md']);
+      git.add(['README.md']);
       git.commit('new sms', (err, data) => {
         if (err) throw err;
         console.log(data);
