@@ -15,6 +15,7 @@ bot.on('channel_post', (msg) => {
       git.commit('new sms', (err, data) => {
         if (err) throw err;
         console.log(data);
+        git.push();
       });
     });
   }
