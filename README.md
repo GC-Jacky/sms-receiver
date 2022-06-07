@@ -21,3 +21,7 @@ KINTO bb
 KINTO OK
 
 ---
+
+KINTO GC
+
+---
