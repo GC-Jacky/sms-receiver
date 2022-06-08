@@ -6,7 +6,7 @@ const git = simpleGit().clean(simpleGit.CleanOptions.FORCE);
 const token = process.env.TOKEN;
 const bot = new TelegramBot(token, {polling: true});
 bot.on('channel_post', (msg) => {
-  if ( msg.text.includes("KINTO") ) {
+  if ( msg.text.includes("SIM2") ) {
     console.log(msg.text);
     const fs = require('fs');
 
